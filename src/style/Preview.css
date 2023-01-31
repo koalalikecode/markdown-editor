@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600&display=swap');
+
+.preview {
+    flex-grow: 1;
+    height: 100%;
+    overflow: auto;
+    min-width: 15%;
+    width: 50%;
+    position: relative;
+}
+.preview::-webkit-scrollbar{
+    width: 4px;
+}
+.preview::-webkit-scrollbar-track {
+    background: #15161A;
+}
+.preview::-webkit-scrollbar-thumb {
+    background-color: #E56343;
+    border-radius: 2px;
+}
+
+.preview .preview-header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #7C8187;
+    background: #1E1F23;
+    padding: 1rem;
+    font-family: 'Mukta', sans-serif;
+    line-height: 1.25;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+.light .preview-header{
+    background: #F5F5F5;
+}
+.preview .preview-header .preview-icon {
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.preview .preview-header .preview-icon:hover{
+    color: white;
+    transition: ease-out 0.3s;
+}
+.light .preview .preview-header .preview-icon:hover{
+    color: black;
+    transition: ease-out 0.3s;
+}
+.preview .preview-header .invi-preview-icon {
+    display: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.preview .preview-header .invi-preview-icon:hover{
+    color: white;
+    transition: ease-out 0.3s;
+}
+.light .preview .preview-header .invi-preview-icon:hover{
+    color: black;
+    transition: ease-out 0.3s;
+}
+.preview-active .preview-header .invi-preview-icon {
+    display: inline-block;
+}
+.preview-active .preview-header .preview-icon {
+    display: none;
+}
+.preview-content {
+    color: #7C8187;
+    padding: 0.5rem 1.5rem;
+    line-height: 1.5;
+    font-family: 'Roboto Slab', serif;
+}
+.preview-active .preview-content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.preview-content h1, h2, h3, h4, h5, h6{
+    padding: 0.5rem 0;
+    color: white;
+}
+
+.light .preview-content h1, .light .preview-content h2, .light .preview-content h3, .light .preview-content h4, .light .preview-content h5, .light .preview-content h6{
+    color: black;
+}
+.preview-content p{
+    padding: 0.5rem 0;
+}
+.preview-content h2{
+    font-size: 28px;
+    font-weight: 300;
+}
+.preview-content h3{
+    font-size: 24px;
+}
+.preview-content h4 {
+    font-size: 20px;
+}
+.preview-content h5 {
+    font-size: 16px;
+}
+.preview-content h6 {
+    font-size: 12px;
+    color: #E56343;
+}
+.preview-content ul, .preview-content ol{
+    padding: 0.5rem 0 0.5rem 2.25rem;
+}
+.preview-content ul li, .preview-content ol li {
+    padding-bottom: 4px;
+}
+.preview-content ul li:last-child, .preview-content ol li:last-child {
+    padding-bottom: 0px;
+}
+.preview-content ul {
+    list-style: none;
+}
+.preview-content ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #E56343; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+.preview-content a{
+    color: white;
+}
+.light .preview-content a{
+    color: black;
+}
+.preview-content a:hover{
+    color: #E56343;
+    transition: ease-out 0.3s;
+}
+
+.preview-content blockquote {
+    margin: 0.5rem 0;
+    color: white;
+    background: #2C2D31;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    border-left: 4px solid #E56343;
+}
+.light .preview-content blockquote {
+    background: #F5F5F5;
+    color: black;
+
+}
+
+.preview-content pre{
+    background: #2C2D31;
+    margin: 0.5rem 0;
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+.light .preview-content pre {
+    background: #F5F5F5;
+}
+
+.preview-content code {
+    color: white;
+    background: #2C2D31;
+}
+
+.light .preview-content code {
+    color: black;
+    background: #F5F5F5;
+}

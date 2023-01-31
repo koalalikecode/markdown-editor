@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;500&display=swap');
+
+.content {
+    width: 50%;
+    min-width: 15%;
+    height: 100%;
+    resize: horizontal;
+    border-right: 2px solid #2C2D31;
+    overflow: auto;
+}
+.preview-active .content{
+    display: none;
+}
+.light .content {
+    border-right: 2px solid #F5F5F5;
+
+}
+
+.content .content-header{
+    color: #7C8187;
+    background: #1E1F23;
+    padding: 1rem;
+    font-family: 'Mukta', sans-serif;
+    line-height: 1.25;
+    letter-spacing: 2px;
+}
+.light .content-header {
+    background: #F5F5F5;
+}
+.content .content-main {
+    height: calc(100%  - 60px);
+    width: 100%;
+    resize: none;
+    background-color: #15161A; 
+    border: none;
+    outline: none;
+    color: #7C8187;
+    padding: 1rem;
+    font-size: 16px;
+}
+.light .content-main{
+    background-color: #FFFFFF; 
+}
+.content .content-main::-webkit-scrollbar{
+    width: 4px;
+}
+.content .content-main::-webkit-scrollbar-track {
+    background: #15161A;
+}
+.content .content-main::-webkit-scrollbar-thumb {
+    background-color: #E56343;
+    border-radius: 2px;
+}
